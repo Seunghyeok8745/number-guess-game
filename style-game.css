@@ -12,8 +12,8 @@ body {
   background-image: url(dark-hallway.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 490px;
-  height: 750px;
+  width: 450px;
+  height: 680px;
   padding-top: 60px;
   margin: 0;
 }
@@ -105,7 +105,7 @@ button:hover {
   margin-top: -100px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
   h1 {
     font-size: 30px;
   }
@@ -118,8 +118,5 @@ button:hover {
   #win-picture {
     padding: 0 20px;
     margin-bottom: 5px;
-  }
-  .container {
-    height: 730px;
   }
 }

@@ -104,7 +104,6 @@ function play() {
 
 function showFailed() {
   document.body.style.backgroundImage = "url('scary.gif')";
-  document.body.style.backgroundSize = 'cover';
   document.body.style.backgroundSize = '100% 100%';
 }
 
