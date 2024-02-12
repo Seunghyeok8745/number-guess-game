@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="style-game.css" />
   </head>
   <body>
-    <h1>Guess the Number!</h1>
-    <h3>Number Guessing Javascript Game</h3>
-    <div id="result">Your Result:</div>
-    <input type="number" name="" id="user-num" />
-    <button id="play-button">Guess</button>
+    <div class="container" id="mainBox">
+        <h1 id="main-title">Let's.... <br />Guess the Number...</h1>
+        <p id="subtitle">Number Guessing Javascript Game</p>
+      <div class="container2">
+        <div id="result" hidden></div>
+        <div id="chance">You have 5 chances..</div>
+        <img src="boolucky.gif" alt="cute-ghost" id ="win-picture" hidden>
+        <div class="input">
+          <input type="number" name="" id="user-num" size="5" placeholder="Enter your destiny number...."/>
+        </div>
+        <div class="buttons">
+          <button id="play-button">GUESS</button>
+          <button id="reset-button">RESET</button>
+        </div>
+        </div>
+      </div>
+    </div>
     <script src="guess-game.js"></script>
   </body>
 </html>

@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 750px;
+}
+.container {
+  background-image: url(dark-hallway.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 490px;
+  height: 750px;
+  padding: 60px 0;
+  margin: 0;
+}
+h1,
+p {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+  font-size: 34px;
+  padding-bottom: 35px;
+  opacity: 90%;
+}
+p {
+  font-size: 15px;
+  opacity: 15%;
+  letter-spacing: 1px;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  padding: 20px 0;
+}
+#result,
+#chance {
+  color: white;
+  text-align: center;
+}
+#result {
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  padding-bottom: 40px;
+  letter-spacing: 2px;
+}
+#chance {
+  font-size: 18px;
+  opacity: 95%;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+#user-num {
+  width: 260px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.464);
+  border: 0.5px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+button {
+  width: 200px;
+  height: 55px;
+  margin: 15px 0;
+  background-color: rgba(0, 0, 0, 0.553);
+  color: white;
+  border: 0.5px solid rgba(255, 255, 255, 0.18);
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px solid white;
+  transition: ease-in 0.2s;
+}
+
+#user-num:hover {
+  border: 0.5px solid white;
+  transition: 0.2s ease-in;
+  background-color: black;
+}
+#win-picture {
+  position: relative;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+  #result {
+    font-size: 27px;
+  }
+  #chance {
+    font-size: 16px;
+  }
+  #win-picture {
+    padding: 0 20px;
+    margin-bottom: 5px;
+  }
+  .container {
+    height: 730px;
+  }
+}
