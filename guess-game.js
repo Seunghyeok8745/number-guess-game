@@ -60,6 +60,7 @@ function play() {
     userResult.textContent = 'NO same number..';
     return;
   }
+
   chances--;
   chanceArea.textContent = `Chances: ${chances}`;
   console.log('Chances', chances);
@@ -78,6 +79,7 @@ function play() {
     gameName.style.display = 'none';
     gameType.style.display = 'none';
     parentElement.insertBefore(userResult, gameName);
+    return;
   }
 
   history.push(userValue);
@@ -98,7 +100,9 @@ function play() {
     gameBox.style.backgroundImage = 'none';
     resetButton.style.position = 'fixed';
     resetButton.style.bottom = '35px';
-    showFailed();
+    if (chances < 1) {
+      showFailed();
+    }
   }
 }
 
