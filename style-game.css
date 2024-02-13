@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: black;
-  height: 750px;
+  height: auto;
 }
 .container {
   background-image: url(dark-hallway.jpg);
@@ -118,5 +118,8 @@ button:hover {
   #win-picture {
     padding: 0 20px;
     margin-bottom: 5px;
+  }
+  .container2 {
+    margin-top: 85px;
   }
 }
