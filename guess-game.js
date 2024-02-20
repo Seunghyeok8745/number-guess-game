@@ -31,19 +31,9 @@ resetButton.addEventListener('click', reset);
 userInput.addEventListener('focus', function () {
   userInput.value = '';
 });
-// focus는 커서가
-// getElementById - 아이디를 통해 가져오는 방식
-//getElementByClassName, querySelector
-// addEventListener - 이벤트 추가 focus hover etc.
-// 함수를 매개변수로 줘야함  () 넣을시 자동실행됨
-// document.querySelector('#play-button), ('.user-num'), ('nav a');
-// 선택자를 기반으로 요소를 찾아내며, 첫 번째로 일치하는 요소만 반환
-// document.querySelectorAll
-// 선택자를 기반으로 요소를 찾아내며, 일치하는 모든 요소를 NodeList 형태로 반환
 
 function pickRandomNumber() {
   computerNum = Math.floor(Math.random() * 100) + 1;
-  //   math.random - 0~1 사이의 숫자를 함수로 반환 (소수점, 1에 근접한 숫자 까지)
   console.log('Answer', computerNum);
 }
 
